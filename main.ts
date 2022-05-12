@@ -8,15 +8,8 @@ basic.forever(function () {
     )
     basic.pause(500)
     pins.analogWritePin(AnalogPin.P0, 0)
-    basic.pause(60000)
+    basic.pause(6000)
 })
 basic.forever(function () {
     fugt = pins.analogReadPin(AnalogPin.P0)
-})
-basic.forever(function () {
-    led.plotBarGraph(
-    fugt,
-    1024
-    )
-    basic.pause(5000)
 })

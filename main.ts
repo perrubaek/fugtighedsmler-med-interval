@@ -1,3 +1,6 @@
+input.onButtonPressed(Button.A, function () {
+    basic.showNumber(fugt)
+})
 let fugt = 0
 basic.showLeds(`
     . . . . .
@@ -11,7 +14,7 @@ basic.forever(function () {
     basic.pause(500)
     led.plotBarGraph(
     fugt,
-    1024
+    1023
     )
     basic.pause(500)
     pins.analogWritePin(AnalogPin.P0, 0)
